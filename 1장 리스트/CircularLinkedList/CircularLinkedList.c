@@ -3,9 +3,6 @@
 // 노드 생성
 Node* CDLL_CreateNode(ElementType NewData)
 {
-<<<<<<< HEAD
-	 
-=======
 	Node* NewNode = (Node*)malloc(sizeof(Node));
 
 	NewNode->Data = NewData;
@@ -124,5 +121,4 @@ void CDLL_PrintNode(Node* Head)
 			i++;
 		} while (Current != Head);
 	}
->>>>>>> 57af7cd4ebfc50b96f44b03d32266bc3195ffea8
 }
