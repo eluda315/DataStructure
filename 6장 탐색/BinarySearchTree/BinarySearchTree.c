@@ -85,6 +85,7 @@ BSTNode* BST_RemoveNode(BSTNode* Tree, BSTNode* Parent, ElementType Target)
 			if (Tree->Left != NULL && Tree->Right != NULL)
 			{
 				BSTNode* Min = BST_SearchMinNode(Tree->Right);
+				// 최솟값 노드는 자식이 있어도 무조건 하나만 있으므로 처리가 쉬움
 				Min = BST_RemoveNode(Tree, NULL, Min->Data);
 				Tree->Data = Min->Data;
 			}
